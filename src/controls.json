@@ -72,12 +72,12 @@
     { 
         "name": "pan_absolute",
         "max": 468000,
-        "min": 0
+        "min": -468000
     },
     { 
         "name": "tilt_absolute",
         "max": 324000,
-        "min": 0
+        "min": -324000
     },
     { 
         "name": "focus_absolute",
@@ -102,11 +102,11 @@
     { 
         "name": "pan_speed",
         "max": 160,
-        "min": 0
+        "min": -1
     },
     { 
         "name": "tilt_speed",
         "max": 120,
-        "min": 0
+        "min": -1
     }
 ]
