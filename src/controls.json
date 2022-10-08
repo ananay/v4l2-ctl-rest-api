@@ -1,32 +1,112 @@
 [
     {
         "name": "brightness",
-        "min": 30,
-        "max": 255
+        "max": 100,
+        "min": 0
     },
-    {
+    { 
         "name": "contrast",
-        "min": 0,
-        "max": 10
+        "max": 100,
+        "min": 0
     },
-    {
+    { 
         "name": "saturation",
-        "min": 0,
-        "max": 200
+        "max": 100,
+        "min": 0
     },
-    {
+    { 
+        "name": "hue",
+        "max": 100,
+        "min": 0
+    },
+    { 
+        "name": "white_balance_temperature_auto",
+        "max": 1,
+        "min": 0
+    },
+    { 
+        "name": "white_balance_red_component",
+        "max": 0,
+        "min": 0
+    },
+    { 
+        "name": "white_balance_blue_component",
+        "max": 0,
+        "min": 0
+    },
+    { 
+        "name": "gain",
+        "max": 48,
+        "min": 0
+    },
+    { 
+        "name": "power_line_frequency",
+        "max": 2,
+        "min": 0
+    },
+    { 
+        "name": "white_balance_temperature",
+        "max": 6500,
+        "min": 0
+    },
+    { 
         "name": "sharpness",
-        "min": 0,
-        "max": 50
+        "max": 4,
+        "min": 0
     },
-    {
-        "name": "exposure_absolute",
-        "min": 5,
-        "max": 20000
+    { 
+        "name": "backlight_compensation",
+        "max": 18,
+        "min": 0
     },
-    {
+    { 
         "name": "exposure_auto",
-        "min": 0,
-        "max": 3
+        "max": 3,
+        "min": 0
+    },
+    { 
+        "name": "exposure_absolute",
+        "max": 2500,
+        "min": 0
+    },
+    { 
+        "name": "pan_absolute",
+        "max": 468000,
+        "min": 0
+    },
+    { 
+        "name": "tilt_absolute",
+        "max": 324000,
+        "min": 0
+    },
+    { 
+        "name": "focus_absolute",
+        "max": 100,
+        "min": 0
+    },
+    { 
+        "name": "focus_auto",
+        "max": 1,
+        "min": 0
+    },
+    { 
+        "name": "zoom_absolute",
+        "max": 100,
+        "min": 0
+    },
+    { 
+        "name": "zoom_continuous",
+        "max": 100,
+        "min": 0
+    },
+    { 
+        "name": "pan_speed",
+        "max": 160,
+        "min": 0
+    },
+    { 
+        "name": "tilt_speed",
+        "max": 120,
+        "min": 0
     }
 ]
