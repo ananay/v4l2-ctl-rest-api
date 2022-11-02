@@ -4,7 +4,7 @@ const logger = require("morgan");
 const cors = require("cors");
 const bodyParser = require('body-parser');
 const generateSettingRoute = require('./lib/generateSettingRoute');
-
+const spawn = require('child_process').spawn;
 const app = express();
 
 app.use(logger("dev"));
@@ -23,6 +23,26 @@ app.use('/', index);
 // future implementation should be /<device>/settings
 const settings = require('./routes/settings');
 app.use('/settings', settings);
+
+app.post('/:device/stab/:value', (req, res) => {
+    console.log("STAB!!!")
+    let value = req.params.value;
+    if (value == "true" || value == true) {
+        spawn('python3', ['/home/thunderbird/thunderbird-video/imu2/obsGimbal.py'], {
+            detached: true
+        });
+        return res.status(200).send({
+            "success": true,
+            "stab": "on"
+        });
+    } else {
+        spawn('killall', ['python3']);
+        return res.status(200).send({
+            "success": true,
+            "stab": "off"
+        });
+    }
+});
 
 for(let setting of require('./controls.json')) {
     app.use('/', generateSettingRoute(setting.name, setting.min, setting.max));
