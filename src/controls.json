@@ -2,7 +2,7 @@
     {
         "name": "brightness",
         "max": 100,
-        "min": 0
+        "min": -64
     },
     { 
         "name": "contrast",
